@@ -1,0 +1,134 @@
+/* Fuente similar a Apple */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* Estilo general */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fuente Inter de Google Fonts */
+    margin: 0;
+    /* Sin margen */
+    padding: 0;
+    /* Sin padding */
+    background-color: #f5f5f7;
+    /* Color de fondo gris claro */
+    color: #333;
+    /* Color de texto gris oscuro */
+}
+
+/* Encabezado tipo Apple  */
+header {
+    background: #fff;
+    /* Color de fondo blanco */
+    padding: 20px;
+    /* Espaciado interno alrededor del contenido */
+    text-align: center;
+    /* Centrar texto */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+/* Logo estilo Apple */
+h1 {
+    font-size: 2.5rem;
+    /* Tamaño de fuente grande */
+    font-weight: bold;
+    /*define el texto como negrita*/
+    color: #000;
+    /* El color de texto es negro puro*/
+    margin: 20px 0;
+    /* Agrega un espacio vertical de 20px arriba y abajo*/
+}
+
+/* Estilo de párrafos  */
+p {
+    font-size: 18px;
+    /* Usa tamaño de fuente de 18px para mayor legibilidad*/
+    line-height: 1.6;
+    /* Aumenta el interlineado para que los textos sean mas fáciles de leer*/
+    text-align: center;
+    /* Centra el texto*/
+    max-width: 800px;
+    /* Limita el ancho para que el texto no sea demasiado extenso en pantalla grande*/
+    margin: 20px auto;
+    /* Aplica un margen superior e inferior y centra el bloque con "auto" */
+}
+
+/* Botones estilo Apple */
+.button {
+    display: inline-block;
+    /* Usa dysplay para que el botón respete el ancho de su contenido*/
+    background-color: #0071e3;
+    /* Aplica un color de fondo azul Apple*/
+    color: white;
+    /* Define el color del texto en blanco*/
+    padding: 12px 20px;
+    /* Usa padding interno de 12px arriba/abajo y 20px a los lados.*/
+    border-radius: 30px;
+    /* Aplica un borde redondeado de 30px*/
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces*/
+    font-size: 18px;
+    /* Usa un tamaño de fuente de 18px para mayor legibilidad*/
+    font-weight: bold;
+    /* Define el texto como negrita*/
+    transition: background 0.3s;
+    /* Aplica una transición suave al color de fondo*/
+}
+
+/* Efecto hover para el botón */
+.button:hover {
+    background-color: #005bb5;
+    /* Cambia el color de fondo al pasar el mouse*/
+}
+
+/* Sección de productos */
+.products {
+    display: flex;
+    /* Usa display flex para alinear los productos en fila*/
+    justify-content: center;
+    /* Centra los productos horizontalmente*/
+    flex-wrap: wrap;
+    /* Permite que los productos se envuelvan en varias filas si no hay suficiente espacio*/
+    gap: 30px;
+    /* Aplica un espacio de 30px entre los productos*/
+    margin-top: 40px;
+    /* Aplica un margen superior de 40px*/
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background: white;
+    /* Color de fondo blanco */
+    padding: 20px;
+    /* Espaciado interno de 20px */
+    border-radius: 20px;
+    /* Bordes redondeados de 20px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    text-align: center;
+    /* Centra el texto */
+    max-width: 300px;
+    /* Ancho máximo de 300px */
+}
+
+/* Imagen del producto */
+.product-card img {
+    width: 100%;
+    /* Ancho completo de la tarjeta */
+    border-radius: 15px;
+    /* Bordes redondeados de 15px */
+}
+
+/* Footer */
+footer {
+    background: #000;
+    /* Fondo negro para contrstar con el contenido*/
+    color: #fff;
+    /* Texto en blanco*/
+    text-align: center;
+    /* Centra el contenido*/
+    padding: 20px;
+    /* Padding de 20px para espaciar el texto dentro del footer*/
+    margin-top: 40px;
+    /* Márgen superior (margin-top: 40px) para separar el footer del contenido.*/
+}

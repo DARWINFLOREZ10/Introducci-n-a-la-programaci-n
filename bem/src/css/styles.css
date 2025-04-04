@@ -1,0 +1,73 @@
+/* 🔹 Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    gap: 20px;
+}
+
+/* 🔹 Bloque: card */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Elemento: card__image */
+.card__image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* 🔹 Elemento: card__title */
+.card__title {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* 🔹 Elemento: card__button */
+.card__button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.card__button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Modificador: card--featured */
+.card--featured {
+    border: 2px solid #ff9800;
+    background-color: #fff3e0;
+}
+
+.card--featured .card__title {
+    color: #e65100;
+}
+
+.card--featured .card__button {
+    background-color: #ff9800;
+}
+
+.card--featured .card__button:hover {
+    background-color: #e65100;
+}

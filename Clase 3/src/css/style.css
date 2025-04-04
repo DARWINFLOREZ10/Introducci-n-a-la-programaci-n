@@ -18,6 +18,11 @@ header {
 /* Títulos */
 h1,
 h2 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
     text-align: center;
     color: #333;
 }
