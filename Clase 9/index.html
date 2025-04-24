@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Posicionamiento CSS</title>
+    <link rel="stylesheet" href="/Clase 9/src/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos de Posicionamiento CSS</h1>
+        <p>Guía visual de los diferentes tipos de posicionamiento en CSS</p>
+    </header>
+
+    <main>
+        <section id="static">
+            <h2>Posicionamiento Static (Predeterminado)</h2>
+            <p>Los elementos con <code>position: static</code> siguen el flujo normal del documento.</p>
+            <div class="example-container">
+                <div class="box static-box">Caja 1</div>
+                <div class="box static-box">Caja 2</div>
+                <div class="box static-box">Caja 3</div>
+            </div>
+        </section>
+
+        <section id="relative">
+            <h2>Posicionamiento Relative</h2>
+            <p>Los elementos con <code>position: relative</code> pueden desplazarse respecto a su posición normal.</p>
+            <div class="example-container">
+                <div class="box">Caja Normal</div>
+                <div class="box relative-box">Caja Relative</div>
+                <div class="box">Caja Normal</div>
+            </div>
+        </section>
+
+        <section id="absolute">
+            <h2>Posicionamiento Absolute</h2>
+            <p>Los elementos con <code>position: absolute</code> se posicionan respecto al ancestro posicionado más
+                cercano.</p>
+            <div class="example-container position-relative">
+                <div class="box">Caja Normal</div>
+                <div class="box absolute-box">Caja Absolute</div>
+                <div class="box">Caja Normal</div>
+            </div>
+        </section>
+
+        <section id="fixed">
+            <h2>Posicionamiento Fixed</h2>
+            <p>Los elementos con <code>position: fixed</code> se posicionan respecto a la ventana del navegador.</p>
+            <div class="example-container">
+                <div class="box fixed-box">Caja Fixed</div>
+            </div>
+            <p class="note">La caja fixed permanece en la misma posición incluso al desplazarse.</p>
+        </section>
+
+        <section id="sticky">
+            <h2>Posicionamiento Sticky</h2>
+            <p>Los elementos con <code>position: sticky</code> se comportan como relative hasta alcanzar un umbral,
+                luego como fixed.</p>
+            <div class="example-container sticky-container">
+                <div class="box sticky-box">Caja Sticky</div>
+                <div class="placeholder"></div>
+            </div>
+            <p class="note">Desplázate para ver cómo la caja sticky se mantiene visible.</p>
+        </section>
+
+        <section id="z-index">
+            <h2>Z-Index y Capas</h2>
+            <p>La propiedad <code>z-index</code> controla el orden de apilamiento de elementos posicionados.</p>
+            <div class="example-container position-relative">
+                <div class="box z-box z-box-1">z-index: 1</div>
+                <div class="box z-box z-box-3">z-index: 3</div>
+                <div class="box z-box z-box-2">z-index: 2</div>
+            </div>
+        </section>
+
+        <section id="display-types">
+            <h2>Tipos de Display</h2>
+            <p>La propiedad <code>display</code> determina cómo se muestra un elemento en el flujo del documento.</p>
+
+            <h3>Display Block</h3>
+            <p>Los elementos <code>display: block</code> ocupan todo el ancho disponible y crean una nueva línea.</p>
+            <div class="example-container">
+                <div class="display-block">Elemento Block 1</div>
+                <div class="display-block">Elemento Block 2</div>
+            </div>
+
+            <h3>Display Inline</h3>
+            <p>Los elementos <code>display: inline</code> ocupan solo el espacio necesario y no crean nuevas líneas.</p>
+            <div class="example-container">
+                <span class="display-inline">Elemento Inline 1</span>
+                <span class="display-inline">Elemento Inline 2</span>
+                <span class="display-inline">Elemento Inline 3</span>
+            </div>
+
+            <h3>Display Inline-Block</h3>
+            <p>Los elementos <code>display: inline-block</code> combinan características de block e inline.</p>
+            <div class="example-container">
+                <div class="display-inline-block">Inline-Block 1</div>
+                <div class="display-inline-block">Inline-Block 2</div>
+                <div class="display-inline-block">Inline-Block 3</div>
+            </div>
+
+            <h3>Display Flex</h3>
+            <p>El <code>display: flex</code> permite crear layouts flexibles en una dimensión.</p>
+            <div class="example-container display-flex-container">
+                <div class="flex-item">Flex 1</div>
+                <div class="flex-item">Flex 2</div>
+                <div class="flex-item">Flex 3</div>
+            </div>
+
+            <h3>Display Grid</h3>
+            <p>El <code>display: grid</code> permite crear layouts en dos dimensiones.</p>
+            <div class="example-container display-grid-container">
+                <div class="grid-item">Grid 1</div>
+                <div class="grid-item">Grid 2</div>
+                <div class="grid-item">Grid 3</div>
+                <div class="grid-item">Grid 4</div>
+            </div>
+
+            <h3>Display None</h3>
+            <p>Los elementos con <code>display: none</code> no se muestran y no ocupan espacio.</p>
+            <div class="example-container">
+                <div class="display-block">Elemento visible</div>
+                <div class="display-none">Este elemento no es visible</div>
+                <div class="display-block">Otro elemento visible</div>
+                <p class="note">El segundo elemento tiene <code>display: none</code> y no se muestra.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tutorial de posicionamiento CSS con ejemplos simples</p>
+    </footer>
+</body>
+
+</html>

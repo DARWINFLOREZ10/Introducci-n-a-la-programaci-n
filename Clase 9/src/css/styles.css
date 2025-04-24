@@ -1,0 +1,256 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para el pie de página */
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Estilos para el pie de página */
+code {
+    background-color: #f8f8f8;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Estilos para los ejemplos */
+.example-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    min-height: 150px;
+    position: relative;
+}
+
+/* Posicionamiento  */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Posicionamiento Static */
+.static-box {
+    position: static;
+    background-color: #3498db;
+}
+
+/* Posicionamiento Relative */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #e74c3c;
+}
+
+/* Posicionamiento Absolute */
+.position-relative {
+    position: relative;
+}
+
+/* Posicionamiento Absolute */
+.absolute-box {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #2ecc71;
+}
+
+/* Posicionamiento Fixed */
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9b59b6;
+    z-index: 100;
+}
+
+/* Posicionamiento Sticky */
+.sticky-container {
+    height: 200px;
+    overflow-y: auto;
+}
+
+/* Posicionamiento Sticky */
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #f39c12;
+}
+
+/* Posicionamiento Sticky */
+.placeholder {
+    height: 300px;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+}
+
+/* Z-Index */
+.z-box {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+
+/* Z-Index */
+.z-box-1 {
+    background-color: rgba(52, 152, 219, 0.8);
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+}
+
+/* Z-Index */
+.z-box-2 {
+    background-color: rgba(46, 204, 113, 0.8);
+    z-index: 2;
+    top: 60px;
+    left: 60px;
+}
+
+/* Z-Index */
+.z-box-3 {
+    background-color: rgba(231, 76, 60, 0.8);
+    z-index: 3;
+    top: 90px;
+    left: 90px;
+}
+
+/* Z-Index */
+.note {
+    font-style: italic;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Tipos de Display */
+.display-block {
+    display: block;
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Tipos de Display */
+.display-inline {
+    display: inline;
+    background-color: #f1c40f;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+/* Tipos de Display */
+.display-inline-block {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Tipos de Display */
+.display-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Tipos de Display */
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.display-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+/* Tipos de Display */
+.grid-item {
+    background-color: #9b59b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Tipos de Display */
+.display-none {
+    display: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
