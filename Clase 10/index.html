@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Completos de Flexbox</title>
+    <link rel="stylesheet" href="/Clase 10/src/css/styles.css">
+</head>
+
+<body>
+    <h1>Ejemplos Completos de Flexbox</h1>
+
+    <!-- Flex Direction -->
+    <div class="section">
+        <h2>1. Flex Direction</h2>
+
+        <p class="description">Row (Default)</p>
+        <div class="demo-container flex-direction-demo direction-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p class="description">Column</p>
+        <div class="demo-container flex-direction-demo direction-column">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p class="description">Row Reverse</p>
+        <div class="demo-container flex-direction-demo direction-row-reverse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+
+    <!-- Justify Content -->
+    <div class="section">
+        <h2>2. Justify Content</h2>
+
+        <p class="description">Flex Start (Default)</p>
+        <div class="demo-container justify-content-demo justify-start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p class="description">Center</p>
+        <div class="demo-container justify-content-demo justify-center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p class="description">Space Between</p>
+        <div class="demo-container justify-content-demo justify-between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p class="description">Space Around</p>
+        <div class="demo-container justify-content-demo justify-around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+
+    <!-- Align Items -->
+    <div class="section">
+        <h2>3. Align Items</h2>
+
+        <p class="description">Center</p>
+        <div class="demo-container align-items-demo align-center">
+            <div style="height: 50px">1</div>
+            <div style="height: 70px">2</div>
+            <div style="height: 40px">3</div>
+        </div>
+
+        <p class="description">Flex Start</p>
+        <div class="demo-container align-items-demo align-start">
+            <div style="height: 50px">1</div>
+            <div style="height: 70px">2</div>
+            <div style="height: 40px">3</div>
+        </div>
+
+        <p class="description">Stretch</p>
+        <div class="demo-container align-items-demo align-stretch">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <div class="section">
+        <h2>4. Flex Wrap</h2>
+
+        <p class="description">Wrap</p>
+        <div class="demo-container flex-wrap-demo wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <p class="description">No Wrap</p>
+        <div class="demo-container flex-wrap-demo nowrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+
+    <!-- Flex Grow -->
+    <div class="section">
+        <h2>5. Flex Grow</h2>
+
+        <p class="description">Different grow values</p>
+        <div class="demo-container flex-grow-demo">
+            <div class="grow-1">Grow 1</div>
+            <div class="grow-2">Grow 2</div>
+            <div class="grow-3">Grow 3</div>
+        </div>
+    </div>
+
+    <!-- Order -->
+    <div class="section">
+        <h2>6. Order</h2>
+
+        <p class="description">Reordering elements</p>
+        <div class="demo-container order-demo">
+            <div class="order-3">3rd</div>
+            <div class="order-1">1st</div>
+            <div class="order-2">2nd</div>
+            <div class="order-negative">Start</div>
+        </div>
+    </div>
+
+    <!-- Gap -->
+    <div class="section">
+        <h2>7. Gap</h2>
+
+        <p class="description">Gap: 10px</p>
+        <div class="demo-container gap-demo gap-10">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <p class="description">Gap: 30px</p>
+        <div class="demo-container gap-demo gap-30">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+</body>
+
+</html>
