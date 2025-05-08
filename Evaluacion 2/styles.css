@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Bloque: contenedor */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Bloque: encabezado */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.encabezado__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.encabezado__nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.encabezado__enlace {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.encabezado__enlace:hover {
+    color: #3498db;
+}
+
+/* Bloque: principal */
+.principal {
+    display: flex;
+    flex: 1;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Bloque: barra-lateral */
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px;
+    background-color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.barra-lateral__titulo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.barra-lateral__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.barra-lateral__item {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.barra-lateral__item:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Bloque: contenido */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenido__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contenido__tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contenido__tarjeta {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.contenido__tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.contenido__tarjeta-titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.contenido__tarjeta-texto {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Bloque: pie */
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.pie__texto {
+    font-size: 0.9rem;
+}

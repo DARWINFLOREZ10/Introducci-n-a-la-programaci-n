@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flexbox BEM</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <div class="encabezado__logo">Logo</div>
+            <nav class="encabezado__nav">
+                <a href="#" class="encabezado__enlace">Inicio</a>
+                <a href="#" class="encabezado__enlace">Acerca</a>
+                <a href="#" class="encabezado__enlace">Servicios</a>
+                <a href="#" class="encabezado__enlace">Contacto</a>
+            </nav>
+        </header>
+        <main class="principal">
+            <aside class="barra-lateral">
+                <h2 class="barra-lateral__titulo">Menú Lateral</h2>
+                <div class="barra-lateral__lista">
+                    <div class="barra-lateral__item">Opción 1</div>
+                    <div class="barra-lateral__item">Opción 2</div>
+                    <div class="barra-lateral__item">Opción 3</div>
+                    <div class="barra-lateral__item">Opción 4</div>
+                </div>
+            </aside>
+            <section class="contenido">
+                <h1 class="contenido__titulo">Contenido Principal</h1>
+                <div class="contenido__tarjetas">
+                    <article class="contenido__tarjeta">
+                        <h3 class="contenido__tarjeta-titulo">Tarjeta 1</h3>
+                        <p class="contenido__tarjeta-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <article class="contenido__tarjeta">
+                        <h3 class="contenido__tarjeta-titulo">Tarjeta 2</h3>
+                        <p class="contenido__tarjeta-texto">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+                    <article class="contenido__tarjeta">
+                        <h3 class="contenido__tarjeta-titulo">Tarjeta 3</h3>
+                        <p class="contenido__tarjeta-texto">Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="pie">
+            <p class="pie__texto">© 2025 Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+
+</html>
